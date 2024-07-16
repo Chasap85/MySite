@@ -17,7 +17,7 @@ const navItems = {
 
 export default function NavBar() {
   return (
-    <div className="flex flex-row min-w-full p-4 bg-linear-gradient items-center justify-center rounded-ee-3xlv">
+    <div className="flex p-4 bg-linear-gradient items-center justify-center rounded-ee-3xlv">
       <nav className="flex flex-row" id="nav">
         <div className="flex flex-row">
           <Link href={'/'}>
