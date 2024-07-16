@@ -3,31 +3,67 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground: #1f0802;
+  --background-grey-rgb: 215, 210, 200;
+  --ui-grey-rgb: 210, 210, 200;
+  --ui-white-rgb: 240, 245, 239;
+  --card: #cececc;
+  --yellow-rgb: 220, 227, 89;
+  --yellow: #dce359;
+
+  font-family: "coordinates", monospace;
+  font-weight: 400;
+  font-style: normal;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground: var(--ui-white);
+    --ui-white-rgb: var(--foreground);
+    --ui-grey-rgb: var(--forground);
   }
-}
+} */
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: var(--foreground);
   background: linear-gradient(
       to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--ui-white-rgb)) 75%,
+      rgb(var(--ui-grey-rgb)) 100%
+    );
+  font-weight: 900;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+h2 {
+  font-family: "blippo-mn", sans-serif;
+  font-size: 2.5rem;
+}
+
+li {
+  @apply p-2 items-center outline rounded-sm;
+}
+
+a {
+  font-family: "coordinates", monospace;
+  font-weight: 900;
+  justify-items: center;
+  text-align: center;
+}
+
+p {
+  font-family: "coordinates", monospace;
+  font-weight: 400;
 }

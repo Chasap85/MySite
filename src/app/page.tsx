@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Card from "./components/global/Card/Card";
+import NavBar from "./components/global/NavBar/page";
 
-// export default function Home() { 
+// export default function Home() {
 //   return (
 //     <main className="flex min-h-screen flex-col items-center justify-between p-24">
 //       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -113,46 +115,56 @@ import Image from "next/image";
 // }
 
 export default function Home() {
-  return(
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      {/* nav */}
-      <div className="flex justify-between">
-        <h1 className="item-start mr-72">Personal Site</h1>
-        <nav className="">
-          <ul className="flex gap-24">
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Projects</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-between p-12">
+      <NavBar />
       {/* hero */}
-      <div className="items-center">
-        <h2>Welcom! I&apos;m Chase</h2>
-        <p>Web Developer</p>
+      <div className="animate-fade-left my-2 grid grid-cols-5 p-4 gap-4 justify-center xs:w-full lg:w-full lg:h-full flex-shrink-0 bg-hero-background bg-cover bg-no-repeat">
+        <Image
+          className="col-span-2 drop-shadow-md"
+          src="/heroPhoto.png"
+          alt="Welcome Photo" 
+          width={421}
+          height={202}
+          priority
+        />
+        <div className="col-span-3 flex items-center lg:gap-24 md:gap-16 sm:gap-4 relative">
+          <a
+            href="/resume"
+            className="group rounded-lg px-5 py-4 transition-colors hover:bg-slate-900/10"
+          >
+            <h2 className="mb-3 text-2xl font-semibold">
+              Resume{" "}
+              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                -&gt;
+              </span>
+            </h2>
+            <p className="m-0 max-w-[30ch] text-sm opacity-50">
+              You can view my work history here!
+            </p>
+          </a>
+          <div>
+            <h2>Welcome! I&apos;m Chase</h2>
+            <p>Web Developer</p>
+          </div>
+        </div>
       </div>
+      <h3 className="">Synapse!</h3>
       {/* Cards section */}
-        <h3>Projects</h3>
-      <div className=" flex col-span-3 gap-10">
-        <div>
+      <div className="animate-fade-in flex flex-row  items-center gap-6">
+        <Card>
           <h4>Project 1</h4>
-          <p>Project 1 description</p>
-        </div>
-        <div>
+          <p>Project description</p>
+        </Card>
+        <Card>
           <h4>Project 2</h4>
-          <p>Project 2 description</p>
-        </div>
-        <div>
+          <p>Project description</p>
+        </Card>
+        <Card>
           <h4>Project 3</h4>
-          <p>Project 3 description</p>
-        </div>
+          <p>Project description</p>
+        </Card>
       </div>
     </main>
-  )
+  );
 }
