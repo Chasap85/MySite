@@ -44,6 +44,7 @@ export default function Resume() {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
+      {/*  TODO:  Leave feedback */}
     </div>
   );
 }

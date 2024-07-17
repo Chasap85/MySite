@@ -10,7 +10,11 @@
   --card: #cececc;
   --yellow-rgb: 220, 227, 89;
   --yellow: #dce359;
-
+  --brown: #433230;
+  --brown-dark: #220a08;
+  --egg: #f0f5ef;
+  --brown-transparent: rgba(34, 10, 8, 0.75);
+  
   font-family: "coordinates", monospace;
   font-weight: 400;
   font-style: normal;
@@ -32,14 +36,14 @@
 } */
 
 body {
-  color: var(--foreground);
-  background: linear-gradient(
+  color: var(--brown);
+  /* background: linear-gradient(
       to bottom,
-      rgb(var(--ui-white-rgb)) 75%,
-      rgb(var(--ui-grey-rgb)) 100%
-    );
+      rgb(var(--yellow-rgb)) 25%,
+      rgb(var(--ui-white-rgb)) 100%
+    ); */
   font-weight: 900;
-  padding: 0 3rem 3rem 3rem;
+  padding: 1rem 3rem 3rem 3rem;
   min-height: 100vh;
 }
 
@@ -52,6 +56,7 @@ body {
 h2 {
   font-family: "blippo-mn", sans-serif;
   font-size: 2.5rem;
+  color: var(--egg);
 }
 
 li {

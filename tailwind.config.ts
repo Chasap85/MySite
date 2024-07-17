@@ -12,9 +12,18 @@ const config: Config = {
       'mono': ['"coordinates"', "monospace"],
     },
     extend: {
+	  screens: {
+		'xs': {'min': '0px', 'max': '647px'},
+		'sm': {'min': '648px', 'max': '767px'},
+		'lg': '1024px',
+	  },
       backgroundImage: {
-        'linear-gradient': 'linear-gradient(to bottom, transparent, rgba(var(--ui-white-rgb), 0.1) 50%, rgba(var(--ui-grey-rgb), 0.5) 100%)',
-		'hero-background': "url('/hero.png')",
+        'linear-gradient': 'linear-gradient(to bottom, transparent, rgba(var(--yellow-rgb), 0.1) 50%, rgba(var(--ui-white-rgb), 0.4) 100%)',
+		'hero-background': "url('/images/ui/hero-bg.png')",
+		'footer-bg': "url('/images/ui/footer-bg.svg')",
+		'project-bg': "url('/images/ui/project-bg.png')",
+		'body-bg': "url('/images/ui/body-bg.png')",
+		'backdrop': "url('/images/backdrop.jpg')",
       },
       animation: {
 				"fade-in": "fade-in 2.5s ease-in forwards",

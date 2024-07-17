@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.85 85.85">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #4e3b39;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        fill: #f0f5ef;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="earth">
+    <g>
+      <circle class="cls-2" cx="42.93" cy="42.93" r="42.93"/>
+      <path class="cls-1" d="M46.05,55.41l12.48-12.48M58.53,42.93l-12.48-12.48M58.53,42.93h-31.21M80.37,42.93c0,20.68-16.77,37.45-37.45,37.45S5.48,63.61,5.48,42.93,22.24,5.48,42.93,5.48s37.45,16.77,37.45,37.45Z"/>
+    </g>
+  </g>
+</svg>

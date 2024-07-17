@@ -20,7 +20,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/drs6wro.css" />
         <link rel="stylesheet" href="https://use.typekit.net/drs6wro.css" />
       </head>
-      <body>
+      <body className="bg-body-bg bg-cover bg-no-repeat" >
         <NavBar />
         {children}
       </body>

@@ -9,7 +9,7 @@ const navItems = {
   },
   "/projects": {
     name: "Projects",
-  },
+  }, 
   "/contact": {
     name: "Contact",
   },
@@ -17,7 +17,7 @@ const navItems = {
 
 export default function NavBar() {
   return (
-    <div className="flex p-4 bg-linear-gradient items-center justify-center rounded-ee-3xlv">
+    <div className="flex p-4 bg-[--brown-transparent] items-center justify-center rounded-b-[40px]">
       <nav className="flex flex-row" id="nav">
         <div className="flex flex-row">
           <Link href={'/'}>
