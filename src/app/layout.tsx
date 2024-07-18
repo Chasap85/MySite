@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import NavBar from "./components/global/NavBar/page";
+import NavBar from "./components/global/NavBar/NavBar";
+import Footer from "./components/global/Footer/Footer";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className="bg-body-bg bg-cover bg-no-repeat" >
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

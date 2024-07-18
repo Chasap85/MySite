@@ -5,13 +5,6 @@ export default function Footer() {
     <div className="flex flex-col justify-center items-center mt-4 min-w-full bg-footer-bg bg-cover bg-[--brown] bg-no-repeat rounded-[40px]">
       <div className="flex flex-row min-w-full justify-between items-center">
         <h1 className="p-24 ml-40 text-[--egg] text-6xl">Contact Me</h1>
-        <Image
-          className="mr-40"
-          src="/profile.png"
-          alt="Profile Picture"
-          width={400}
-          height={400}
-        />
       </div>
       <div className="flex flex-row xs:flex-col justify-between items-center p-12">
         <div className="flex justify-center items-center">

@@ -1,4 +1,4 @@
-import NavBar from "../components/global/NavBar/page";
+import NavBar from "../components/global/NavBar/NavBar";
 
 export default function ResumeLayout({
   children,
@@ -6,7 +6,7 @@ export default function ResumeLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-between p-12">
+    <section className="flex min-h-screen flex-col items-center justify-between py-12">
       {children}
     </section>
   );

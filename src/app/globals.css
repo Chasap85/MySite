@@ -11,13 +11,18 @@
   --yellow-rgb: 220, 227, 89;
   --yellow: #dce359;
   --brown: #433230;
-  --brown-dark: #220a08;
+  --brown-lt: #4e3b39;
   --egg: #f0f5ef;
   --brown-transparent: rgba(34, 10, 8, 0.75);
   
   font-family: "coordinates", monospace;
   font-weight: 400;
   font-style: normal;
+
+  ::selection {
+    background: var(--yellow);
+    color: var(--foreground);
+  }
 
   color-scheme: light dark;
 
@@ -43,7 +48,7 @@ body {
       rgb(var(--ui-white-rgb)) 100%
     ); */
   font-weight: 900;
-  padding: 1rem 3rem 3rem 3rem;
+  padding: 1rem 3rem 1rem 3rem;
   min-height: 100vh;
 }
 
@@ -74,3 +79,11 @@ p {
   font-family: "coordinates", monospace;
   font-weight: 400;
 }
+
+/* .slide-out {
+  transform: translateY(-100%);
+}
+
+.slide-in {
+  transform: translateY(0);
+} */
