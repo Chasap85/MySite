@@ -1,5 +1,11 @@
+import { ContactInfo } from "@/types/types"
 
-export default function Profile() {
+interface Props {
+    contact: ContactInfo;
+}
+
+export default function Profile({ contact }: Props) {
+    const { email, phone, github, linkedin, location } = contact;
     return (
         <div>
             <div>
@@ -7,8 +13,10 @@ export default function Profile() {
             </div>
             <div>
                 <h1>Chase Little</h1>
-                
+                <h1>{email}</h1>
+                <h1>{linkedin}</h1>
             </div>
+            
         </div>
     )
 }
