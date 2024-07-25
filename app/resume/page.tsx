@@ -1,10 +1,12 @@
-import Card from "../../components/Card";
-import NavBar from "../../components/Header";
+import ResumeLayout from "@/layouts/ResumeLayout";
+import resume from "@/data/experience";
 
 export default function Resume() {
   return (
     <>
-      
+      <ResumeLayout resume={resume}>
+        
+      </ResumeLayout>
       {/*  TODO:  Leave feedback */}
     </>
   );
