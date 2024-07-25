@@ -1,25 +1,4 @@
-interface Resume {
-  experience: Array<{
-    title: string;
-    company: string;
-    location: string;
-    date: string;
-  }>;
-  eduction: {
-    school: string;
-    location: string;
-    date: string;
-    degree: string;
-  };
-  skills: Array<string>;
-  contact: {
-    email: string;
-    phone: string;
-    github: string;
-    linkedin: string;
-    location: string;
-  };
-}
+import { Resume } from "@/types/types";
 
 const resume: Resume = {
   experience: [
@@ -48,7 +27,7 @@ const resume: Resume = {
       date: "2016-2018",
     },
   ],
-  eduction: {
+  education: {
     school: "New Mexico State University",
     location: "Las Cruces, NM",
     date: "2023",
@@ -73,4 +52,4 @@ const resume: Resume = {
   },
 };
 
-export default Resume;
+export default resume;
