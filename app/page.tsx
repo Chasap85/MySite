@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Link from "@/components/Link";
 import SubHeader from "@/components/SubHeader";
@@ -8,6 +9,7 @@ export default function Home() {
       <SubHeader />
       <Hero />
       <Link />
+      <Footer />
     </div>
   );
 }

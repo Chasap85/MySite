@@ -13,7 +13,7 @@ export default function Card({
   href: string;
 }) {
   return (
-    <div className="flex flex-col bg-slate-400 text-center items-center w-[250px] h-[365px] rounded-[10px] drop-shadow-md">
+    <div className="flex flex-col text-center items-center w-[200px] h-[292px] rounded-[10px] outline outline-[2px] outline-[--black] drop-shadow-md">
       <div className="flex bg-[--bg-dark] justify-center items-center w-full h-1/2 rounded-t-[10px]">
           {image && (
             <Image
@@ -25,7 +25,7 @@ export default function Card({
             />
           )}
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col justify-between">
         <h2 className="text-2xl text-[--text-dark]">{title}</h2>
         <p className="opacity-75">{description}</p>
         <Link href={href}>View</Link>

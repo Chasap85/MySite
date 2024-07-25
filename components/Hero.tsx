@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center w-2/5 h-[262.5px] my-20">
+      <div className="flex flex-col justify-center items-center w-2/5 h-[262.5px] scale-85 my-12">
         <div className="flex justify-center items-center w-full h-full bg-hero-profile bg-contain bg-center bg-no-repeat">
           <a
-            href="/"
+            href="/resume"
             className="group transition-colors pl-24"
           >
             <h2 className="p-4 flex text-2xl justify-center items-center text-slate-900">

@@ -1,11 +1,11 @@
-interface MyData {
+interface Projects {
   title: string;
   description: string;
   image: string;
   href?: string;
 }
 
-const myData: MyData[] = [
+const projects: Projects[] = [
   {
     title: "Projects",
     description: "What I'm working on",
@@ -26,4 +26,4 @@ const myData: MyData[] = [
   },
 ];
 
-export default myData;
+export default projects;

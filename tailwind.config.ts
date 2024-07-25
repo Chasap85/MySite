@@ -8,15 +8,19 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-		sans: ["Fira_Code", "sans-serif"],
+      sans: ["Fira_Code", "sans-serif"],
     },
     extend: {
+      scale: {
+        "75": "0.75",
+        "85": "0.85",
+      },
       backgroundImage: {
-		'hero-profile': "url('/images/hero.webp')",
+        "hero-profile": "url('/images/hero.webp')",
       },
       animation: {
-				"ping": "ping 1s cubic-bezier(0, 0, 0.2, 1)",
-			},
+        ping: "ping 1s cubic-bezier(0, 0, 0.2, 1)",
+      },
     },
   },
   plugins: [],

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
+import Header from "@/components/Header";
 import "./globals.css";
-import NavBar from "../components/Header";
-import Footer from "../components/Footer";
+import SubHeader from "@/components/SubHeader";
 
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
@@ -23,7 +23,8 @@ export default function RootLayout({
       <link rel='icon' type='image/png' href='/static/favicon.png' />
       <body>
         <main className={firaCode.className}>
-          <NavBar />
+          <Header />
+          {/* <SubHeader /> */}
           {children}
         </main>
       </body>
