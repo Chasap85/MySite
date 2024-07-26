@@ -1,3 +1,5 @@
+import About from "@/components/About";
+import Experience from "@/components/Experience";
 import Profile from "@/components/Profile";
 import { Resume } from "@/types/types";
 
@@ -11,8 +13,12 @@ export default function ResumeLayout({ resume, children }: Props) {
     <>
       <div className="flex flex-row">
         <Profile contact={resume.contact} />
-        {children}
+        <div>
+          <About />
+          <Experience experience={resume.experience} />
+        </div>
       </div>
+      {children}
     </>
   );
 }

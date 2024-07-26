@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import Header from "@/components/Header";
 import "./globals.css";
-import SubHeader from "@/components/SubHeader";
 
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
@@ -24,7 +23,6 @@ export default function RootLayout({
       <body>
         <main className={firaCode.className}>
           <Header />
-          {/* <SubHeader /> */}
           {children}
         </main>
       </body>

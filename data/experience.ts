@@ -46,8 +46,8 @@ const resume: Resume = {
   contact: {
     email: "chase@blitworx.com",
     phone: "702-324-2272",
-    github: "github.com/Chasap85",
-    linkedin: "linkedin.com/in/chase-little",
+    github: "https://github.com/Chasap85",
+    linkedin: "https://linkedin.com/in/chase-little",
     location: "Las Vegas, NV",
   },
 };
