@@ -1,5 +1,7 @@
 import { ContactInfo } from "@/types/types";
 import Image from "next/image";
+import Linkedin from "../public//in-logo.svg";
+import GitLogo from "../public/github-logo.svg";
 
 interface Props {
   contact: ContactInfo;
@@ -9,7 +11,7 @@ export default function Profile({ contact }: Props) {
   const { email, phone, github, linkedin, location } = contact;
   return (
     <div className="flex flex-col justify-center items-center mr-12">
-      <div>
+      <div className="shadow-md border-[--black] rounded-full">
         <Image
           src="/assets/portrait.webp"
           alt="Portrait Photo"
@@ -18,7 +20,7 @@ export default function Profile({ contact }: Props) {
           className="rounded-full"
         />
       </div>
-      <h1 className="text-[30px] my-8">Chase Little</h1>
+      <h1 className="text-[25px] my-8">Chase Little</h1>
       {/* Contact info */}
       <div className="justify-center items-start space-y-4">
         <div className="flex space-x-3">
@@ -89,23 +91,11 @@ export default function Profile({ contact }: Props) {
       </div>
       {/* git and linkedin buttons */}
       <div className="flex justify-center space-x-4">
-        <a href={github} target="_blank" rel="noopener noreferrer">
-          <Image
-            src="/github-logo.svg"
-            alt="GitHub Logo"
-            width={50}
-            height={50}
-            className="rounded-full"
-          />
+        <a href={github} target="_blank" rel="noopener noreferrer" className="bg-[--black] p-4 rounded-2xl">
+          <GitLogo className="w-12 h-12 text-[--green]"/>
         </a>
-        <a href={linkedin} target="_blank" rel="noopener noreferrer">
-          <Image
-            src="/in-logo.svg"
-            alt="Linkedin Logo"
-            width={50}
-            height={50}
-            className="rounded-full"
-          />
+        <a href={linkedin} target="_blank" rel="noopener noreferrer" className="bg-[--black] p-4 rounded-2xl">
+          <Linkedin className="w-12 h-12 text-[--green]"/>
         </a>
       </div>
     </div>

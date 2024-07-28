@@ -11,13 +11,13 @@ export default function ExpComponent({ experience }: Props) {
       <div className="grid w-full">
         {experience.map((exp, index) => (
           <div
-            className={`flex flex-col justify-center max-w-full p-4 border-b-4 border-[--green]${
-              index % 2 === 0 ? "bg-gray-200 border-[--green]" : ""
+            className={`flex flex-col justify-center shadow-md max-w-full p-4 border-b-2 border-slate-400 ${
+              index % 2 === 0 ? "bg-gray-300" : ""
             }`}
             key={index}
           >
             <div className="flex flex-row justify-between">
-              <h2 className="text-lg">{exp.title}</h2>
+              <h2 className="text-xl">{exp.title}</h2>
               <div className="flex flex-row my-4 font-light">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

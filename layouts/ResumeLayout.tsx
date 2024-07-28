@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Profile from "@/components/Profile";
+import Skills from "@/components/Skills";
 import { Resume } from "@/types/types";
 
 interface Props {
@@ -15,6 +16,7 @@ export default function ResumeLayout({ resume, children }: Props) {
         <Profile contact={resume.contact} />
         <div>
           <About />
+          <Skills />
           <Experience experience={resume.experience} />
         </div>
       </div>
