@@ -2,13 +2,15 @@ import { ContactInfo } from "@/types/types";
 import Image from "next/image";
 import Linkedin from "../public//in-logo.svg";
 import GitLogo from "../public/github-logo.svg";
+import SvgAsset from "./svg-assets";
+import siteMetadata from "@/data/siteMetadata";
 
 interface Props {
   contact: ContactInfo;
 }
 
 export default function Profile({ contact }: Props) {
-  const { email, phone, github, linkedin, location } = contact;
+  const { email, phone, location } = contact;
   return (
     <div className="flex flex-col justify-center items-center mr-12">
       <div className="shadow-md border-[--black] rounded-full">
@@ -91,12 +93,8 @@ export default function Profile({ contact }: Props) {
       </div>
       {/* git and linkedin buttons */}
       <div className="flex justify-center space-x-4">
-        <a href={github} target="_blank" rel="noopener noreferrer" className="bg-[--black] p-4 rounded-2xl">
-          <GitLogo className="w-12 h-12 text-[--green]"/>
-        </a>
-        <a href={linkedin} target="_blank" rel="noopener noreferrer" className="bg-[--black] p-4 rounded-2xl">
-          <Linkedin className="w-12 h-12 text-[--green]"/>
-        </a>
+        <SvgAsset kind="github" href={siteMetadata.github} size={48} />
+        <SvgAsset kind="linkedin" href={siteMetadata.linkedin} size={48} />
       </div>
     </div>
   );

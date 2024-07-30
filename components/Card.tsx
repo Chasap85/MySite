@@ -21,7 +21,6 @@ export default function Card({
               alt={title}
               width={130}
               height={130}
-              className=""
             />
           )}
       </div>
