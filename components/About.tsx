@@ -7,7 +7,6 @@ export default function About() {
         <div className="flex flex-col justify-center items-start mb-12">
             <h1 className="items-center text-[30px] mb-4">About</h1>
             <p>{about}</p>
-            <SvgAsset kind="arrow" href={siteMetaData.github} size={50}/>
         </div>
     )
 }

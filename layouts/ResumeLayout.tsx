@@ -16,7 +16,7 @@ export default function ResumeLayout({ resume, children }: Props) {
         <Profile contact={resume.contact} />
         <div>
           <About />
-          <Skills />
+          <Skills skills={resume.skills} />
           <Experience experience={resume.experience} />
         </div>
       </div>

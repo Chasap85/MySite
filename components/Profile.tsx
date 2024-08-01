@@ -12,7 +12,7 @@ interface Props {
 export default function Profile({ contact }: Props) {
   const { email, phone, location } = contact;
   return (
-    <div className="flex flex-col justify-center items-center mr-12">
+    <div className="flex flex-col justify-start items-center mr-12">
       <div className="shadow-md border-[--black] rounded-full">
         <Image
           src="/assets/portrait.webp"
@@ -25,7 +25,7 @@ export default function Profile({ contact }: Props) {
       <h1 className="text-[25px] my-8">Chase Little</h1>
       {/* Contact info */}
       <div className="justify-center items-start space-y-4">
-        <div className="flex space-x-3">
+        <div className="flex space-x-3  border-b-2 p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -42,7 +42,7 @@ export default function Profile({ contact }: Props) {
           </svg>
           <p>{email}</p>
         </div>
-        <div className="flex space-x-3">
+        <div className="flex space-x-3  border-b-2 p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -59,7 +59,7 @@ export default function Profile({ contact }: Props) {
           </svg>
           <p>{phone}</p>
         </div>
-        <div className="flex space-x-3">
+        <div className="flex space-x-3 border-b-2 p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

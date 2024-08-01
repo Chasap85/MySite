@@ -39,7 +39,7 @@ const resume: Resume = {
     "Nest.js",
     "TypeScript",
     "Node.js",
-    "Software Development",
+    "Software Dev",
     "Agile",
     "Design",
   ],

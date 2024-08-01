@@ -36,10 +36,10 @@ export default function SvgAsset({ kind, href, size = 24 }: SvgAssetProps) {
   const SvgIcon = assets[kind];
 
   return (
-    <a href={href} className="text-zinc-800">
+    <a href={href} className="">
       <span className="sr-only">{kind}</span>
       <SvgIcon
-        className={`text-zinc-800`}
+        className={``}
         style={{ width: `${size}px`, height: `${size}px` }}
       />
     </a>
