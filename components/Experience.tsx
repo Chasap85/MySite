@@ -11,8 +11,8 @@ export default function ExpComponent({ experience }: Props) {
       <div className="grid w-full">
         {experience.map((exp, index) => (
           <div
-            className={`flex flex-col justify-center shadow-md max-w-full p-4 border-b-2 border-slate-400 ${
-              index % 2 === 0 ? "bg-gray-300" : ""
+            className={`flex flex-col justify-center max-w-full p-4 border-b-2 border-gray-200 ${
+              index % 2 === 0 ? "" : ""
             }`}
             key={index}
           >

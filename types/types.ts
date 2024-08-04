@@ -19,10 +19,15 @@ export interface ContactInfo {
     date: string;
     degree: string;
   }
+
+  export interface Skills {
+    name: string,
+    icon: string,
+  }
   
   export interface Resume {
     experience: Experience[];
     education: Education;
-    skills: string[];
+    skills: Skills[];
     contact: ContactInfo;
   }

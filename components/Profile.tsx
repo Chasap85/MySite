@@ -12,7 +12,7 @@ interface Props {
 export default function Profile({ contact }: Props) {
   const { email, phone, location } = contact;
   return (
-    <div className="flex flex-col justify-start items-center mr-12">
+    <div className="flex flex-col justify-start items-center mr-20">
       <div className="shadow-md border-[--black] rounded-full">
         <Image
           src="/assets/portrait.webp"

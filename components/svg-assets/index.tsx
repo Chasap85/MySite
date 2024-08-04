@@ -10,6 +10,13 @@ import {
   ProjectIcon,
   ArrowIcon,
   Like,
+  Nestjs,
+  Agile,
+  Design,
+  SoftwareDevelopment,
+  Nodejs,
+  React,
+  Typescript,
 } from "./icons";
 
 const assets = {
@@ -24,6 +31,13 @@ const assets = {
   project: ProjectIcon,
   arrow: ArrowIcon,
   like: Like,
+  nestjs: Nestjs,
+  agile: Agile,
+  design: Design,
+  software: SoftwareDevelopment,
+  nodejs: Nodejs,
+  react: React,
+  typescript: Typescript,
 };
 
 type SvgAssetProps = {

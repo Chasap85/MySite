@@ -34,14 +34,38 @@ const resume: Resume = {
     degree: "Bachelor of Arts in Computer Sciences",
   },
   skills: [
-    "React",
-    "Next.js",
-    "Nest.js",
-    "TypeScript",
-    "Node.js",
-    "Software Dev",
-    "Agile",
-    "Design",
+    {
+      name: "React",
+      icon: "react"
+    },
+    {
+      name: "Next.js",
+      icon: "next"
+    },
+    {
+      name: "Nest.js",
+      icon: "nestjs"
+    },
+    {
+      name: "TypeScript",
+      icon: "typescript"
+    },
+    {
+      name: "Node.js",
+      icon: "nodejs"
+    },
+    {
+      name: "Software Dev",
+      icon: "software"
+    },
+    {
+      name: "Agile",
+      icon: "agile"
+    },
+    {
+      name: "Design",
+      icon: "design"
+    },
   ],
   contact: {
     email: "chase@blitworx.com",
