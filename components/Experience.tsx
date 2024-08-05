@@ -8,7 +8,7 @@ export default function ExpComponent({ experience }: Props) {
   return (
     <div className="flex flex-col justify-center items-start">
       <h1 className="text-[30px] mb-4">Work Experience</h1>
-      <div className="grid w-full">
+      <div className="grid w-full p-12">
         {experience.map((exp, index) => (
           <div
             className={`flex flex-col justify-center max-w-full p-4 border-b-2 border-gray-200 ${

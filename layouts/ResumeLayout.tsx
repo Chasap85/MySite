@@ -19,7 +19,7 @@ export default function ResumeLayout({ resume, children }: Props) {
           <About />
           <SkillsComponent skills={resume.skills} />
           <Experience experience={resume.experience} />
-          <Education />
+          <Education education={resume.education} />
         </div>
       </div>
       {children}

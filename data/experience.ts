@@ -30,7 +30,7 @@ const resume: Resume = {
   education: {
     school: "New Mexico State University",
     location: "Las Cruces, NM",
-    date: "2023",
+    date: "2024",
     degree: "Bachelor of Arts in Computer Sciences",
   },
   skills: [
