@@ -31,7 +31,7 @@ body {
   background-color: var(--foreground);
   color: var(--bg-dark);
   font-weight: 900;
-  padding: 1rem 3rem 1rem 3rem;
+  /* padding: 1rem 3rem 1rem 3rem; */
   min-height: 100vh;
 }
 

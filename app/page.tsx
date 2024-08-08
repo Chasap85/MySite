@@ -5,7 +5,7 @@ import SubHeader from "@/components/SubHeader";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-between py-4">
+    <div className="flex flex-col items-center justify-between">
       <SubHeader />
       <Hero />
       <Link />
