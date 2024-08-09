@@ -291,7 +291,7 @@ export const SoftwareDevelopment = ({ ...props }: SVGProps<SVGSVGElement>) => (
     data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 107.47 122.88"
-    fillRule="evenodd"
+    fill="currentColor"
     {...props}
   >
     <title>software-engineer</title>

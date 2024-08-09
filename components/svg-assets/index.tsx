@@ -53,7 +53,7 @@ export default function SvgAsset({ kind, href, size = 24 }: SvgAssetProps) {
     <a href={href} className="">
       <span className="sr-only">{kind}</span>
       <SvgIcon
-        className={``}
+        className=""
         style={{ width: `${size}px`, height: `${size}px` }}
       />
     </a>

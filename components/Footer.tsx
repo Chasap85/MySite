@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="h-[350px] bg-[--black] mt-20 w-full">
+    <div className="h-[350px] bg-[--black] mt-20 w-full dark:border-t-2">
       <div className="p-12">
         <Image
           src="/static/icon.svg"

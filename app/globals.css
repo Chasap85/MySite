@@ -5,13 +5,14 @@
 :root {
   --foreground: #f2f2f2;
   --bg-dark: #262626;
+  --black2: #262626;
   --black: #242611;
   --green: #05f29b;
   --white: #f2f2f2;
   --gray: #d9d9d9;
   --orange: #f26b1d;
 
-  /* color-scheme: light dark; */
+  color-scheme: light dark;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,13 +20,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --foreground: var(--ui-white);
-    --ui-white-rgb: var(--foreground);
-    --ui-grey-rgb: var(--forground);
+    --foreground: var(--white);
+    --bg-dark: var(--white);
+    --black: var(--white);
+    --white: var(--black)
   }
-} */
+}
 
 body {
   background-color: var(--foreground);

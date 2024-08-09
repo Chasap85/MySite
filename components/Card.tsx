@@ -1,31 +1,19 @@
-import Image from "next/image";
-import { AchieveIcon, BioIcon, ProjectIcon } from "@/components/svg-assets/icons";
+import { FunctionComponent } from "react";
 
-export default function Card({
-  title,
-  description,
-  image,
-  href,
-}: {
+type CardProps = {
   title: string;
   description: string;
-  image: string;
+  image: FunctionComponent<React.SVGProps<SVGSVGElement>>;
   href: string;
-}) {
-  const achieve = AchieveIcon;
-  const bio = BioIcon;
-  const project = ProjectIcon;
+};
 
+export default function Card({ title, description, image: ImageComponent, href }: CardProps) {
   return (
     <div className="group flex flex-col text-center items-center w-[200px] h-[292px] rounded-[10px] outline outline-[2px] outline-[--black] drop-shadow-md">
-      <div className="flex bg-[--bg-dark] justify-center items-center w-full h-1/2 rounded-t-[10px]">
-        {image && (
-          <Image
-            src={image}
-            alt={title}
-            width={130}
-            height={130}
-            className="transition-transform duration-300 group-hover:bg-[--green]"
+      <div className="flex bg-[--black] justify-center items-center w-full h-1/2 rounded-t-[10px]">
+        {ImageComponent && (
+          <ImageComponent
+            className="w-[130px] h-[130px] transition-transform duration-300 group-hover:fill-[--green] text-[--white]"
           />
         )}
       </div>
@@ -35,7 +23,7 @@ export default function Card({
         <div className="">
           <a
             href={href}
-            className="inline-block px-6 py-2 outline outline-2 outline-[--black] font-semibold rounded-lg shadow-md hover:bg-[--green] focus:outline-none focus:ring-4 focus:ring-[--black] focus:ring-opacity-75 transition ease-in-out duration-200"
+            className="inline-block px-6 py-2 outline outline-2 outline-[--black] font-semibold rounded-lg shadow-md group-hover:bg-[--green] dark:group-hover:text-[--black2] focus:outline-none focus:ring-4 focus:ring-[--black] focus:ring-opacity-75 transition ease-in-out duration-200"
           >
             View
           </a>

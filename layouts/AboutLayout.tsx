@@ -1,9 +1,23 @@
-export default function AboutLayout() {
+import Conclusion from "@/components/about/Conclusion";
+import Family from "@/components/about/Family";
+import ImageContainer from "@/components/about/ImageContainer";
+import Intro from "@/components/about/Intro";
+
+interface Props {
+  children: React.ReactNode;
+}
+
+export default function AboutLayout({ children }: Props) {
   return (
-    <>
-      <div className="flex justify-center items-center">
-        
-      </div>
-    </>
+    <div className="flex flex-col">
+
+        <Intro />
+        <Family />
+
+        <Conclusion />
+
+        <ImageContainer />
+      {children}
+    </div>
   );
 }

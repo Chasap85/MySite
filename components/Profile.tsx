@@ -12,7 +12,7 @@ interface Props {
 export default function Profile({ contact }: Props) {
   const { email, phone, location } = contact;
   return (
-    <div className="flex flex-col justify-start items-center mr-20 bg-gray-200 p-4 rounded-xl h-5/6">
+    <div className="flex flex-col justify-start items-center mr-20 bg-gray-200 dark:bg-transparent p-4 rounded-xl h-5/6">
       <div className="shadow-md border-[--black] rounded-full">
         <Image
           src="/assets/portrait.webp"
@@ -86,7 +86,7 @@ export default function Profile({ contact }: Props) {
       <div className="my-8">
         <a
           href="/"
-          className="inline-block px-6 py-3 outline outline-[--black] font-semibold rounded-lg shadow-md hover:bg-[--green] focus:outline-none focus:ring-4 focus:ring-[--black] focus:ring-opacity-75 transition ease-in-out duration-200"
+          className="inline-block px-6 py-3 outline outline-[--black] font-semibold rounded-lg shadow-md hover:bg-[--green] dark:hover:text-[--black2] focus:outline-none focus:ring-4 focus:ring-[--black] focus:ring-opacity-75 transition ease-in-out duration-200"
         >
           Download Resume
         </a>

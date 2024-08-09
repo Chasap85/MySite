@@ -11,6 +11,9 @@ const config: Config = {
       sans: ["Fira_Code", "sans-serif"],
     },
     extend: {
+      screens: {
+        xs: '320px',
+      },
       scale: {
         "75": "0.75",
         "85": "0.85",
