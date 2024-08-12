@@ -15,6 +15,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@rive-app/react-canvas": "^4.13.6",
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^18",

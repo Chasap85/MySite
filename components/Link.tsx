@@ -26,7 +26,6 @@ export default function Link() {
   ];
   return (
     <div className="w-full flex flex-col items-center mx-12">
-      <h1>Extra Bits</h1>
       <div className="flex md:flex-row sm:gap-y-10 md:gap-24 justify-between items-center lg:gap-60 flex-col">
         {linkData.map((data) => (
           <Card

@@ -13,7 +13,6 @@ export default function SkillsComponent({ skills }: Props) {
         {skills.map((skill: Skills, index: number) => (
           <div key={index} className="flex flex-col justify-center items-center">
             <div
-              key={index}
               className="flex items-center justify-center outline outline-[--black] outline-2 text-[--black] w-24 h-24 rounded-xl"
             >
               <SvgAsset kind={skill.icon} size={60} href="#"/>

@@ -1,10 +1,9 @@
 import Link from "next/link";
-import SvgAsset from "./svg-assets";
 import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="group">
+    <div>
       <div className="flex flex-col justify-center items-center m-24">
         <div>
           <Image
@@ -14,7 +13,7 @@ export default function Hero() {
             height={300}
           />
         </div>
-        <div className="flex flex-row justify-center items-center mt-8">
+        <div className="group flex flex-row justify-center items-center mt-8">
           <h1 className="text-[40px]">Résumé</h1>
           <Link href="/resume" className="ml-4">
               <svg
@@ -23,7 +22,7 @@ export default function Hero() {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="h-12 w-12 grou[:transition-transform group-hover:translate-x-1 dark:group-hover:text-[--green] group:motion-reduce:transform-none"
+                className="h-16 w-16 grou[:transition-transform group-hover:translate-x-2 dark:group-hover:text-[--green] group:motion-reduce:transform-none"
               >
                 <path
                   strokeLinecap="round"
