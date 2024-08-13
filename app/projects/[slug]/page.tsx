@@ -1,31 +1,12 @@
 import ProjectLayout from "@/layouts/ProjectLayout";
 import Image from "next/image";
+import projectData from "@/data/projects";
+import TableContents from "@/components/projects/TableContents";
 
-// Define your project data
-const projectData = {
-  keno: {
-    title: "Web Keno",
-    description: "Web app where you can play the fun gambling game of keno",
-    image: "/images/game.webp",
-  },
-  cluster: {
-    title: "Pi Cluster",
-    description: "Building a raspberry pi cluster",
-    image: "/images/pi.webp",
-  },
-  quest: {
-    title: "Code Quest",
-    description: "Game that teaches kids how to code",
-    image: "/images/quest.webp",
-  },
-};
-
-// Generate the static paths for your projects
 export async function generateStaticParams() {
   return Object.keys(projectData).map((project) => ({ project }));
 }
 
-// This component will render based on the `params` passed in from `generateStaticParams`
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const projectInfo = projectData[params.slug as keyof typeof projectData];
 
@@ -45,9 +26,42 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           className="mt-20 rounded-full"
         />
       </div>
-      <div className="flex flex-row mt-16">
-        <div className="flex flex-col justify-start items-center mr-20 space-y-8">
-          {/* Add project-specific components or content here */}
+      <div className="grid grid-cols-5 gap-8">
+        <div className="lg:ml-12 md:ml-4 hidden md:block fixed top-1/2">
+          <TableContents repoUrl={projectInfo.repoUrl}/>
+        </div>
+        <div className="col-start-3 col-end-5">
+          <div className="flex flex-col justify-center items-center">
+            <h2 id="intro" className="text-[36px] mt-16">
+              Intro
+            </h2>
+            <p className="mt-8">{projectInfo.intro}</p>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <h2 id="about" className="text-[36px] mt-16">
+              About
+            </h2>
+            <p className="mt-8">{projectInfo.about}</p>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <h2 id="process" className="text-[36px] mt-16 text-start">
+              Process
+            </h2>
+            <p className="mt-8">{projectInfo.process}</p>
+            <Image
+              src={projectInfo.processImage}
+              alt={projectInfo.title}
+              width={600}
+              height={200}
+              className="m-8"
+            />
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <h2 id="progress" className="text-[36px] mt-16">
+              Progress
+            </h2>
+            <p className="mt-8">{projectInfo.progress}</p>
+          </div>
         </div>
       </div>
     </ProjectLayout>

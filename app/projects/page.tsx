@@ -2,27 +2,28 @@ import Header from "@/components/Header";
 import Container from "@/components/projects/Container";
 import Link from "next/link";
 
+const projects = [
+  {
+    title: "keno game",
+    description: "Web app where you can play the fun gambling game of keno",
+    image: "/images/game.webp",
+    url: "/projects/keno",
+  },
+  {
+    title: "pi cluster",
+    description: "Building a raspbery pi cluster",
+    image: "/images/pi.webp",
+    url: "/projects/cluster",
+  },
+  {
+    title: "Code Quest",
+    description: "Game that teaches kids how to code",
+    image: "/images/quest.webp",
+    url: "/projects/quest",
+  },
+];
+
 export default function ProjectPage() {
-  const projects = [
-    {
-      title: "keno game",
-      description: "Web app where you can play the fun gambling game of keno",
-      image: "/images/game.webp",
-      url: "/projects/keno",
-    },
-    {
-      title: "pi cluster",
-      description: "Building a raspbery pi cluster",
-      image: "/images/pi.webp",
-      url: "/projects/cluster",
-    },
-    {
-      title: "Code Quest",
-      description: "Game that teaches kids how to code",
-      image: "/images/quest.webp",
-      url: "/projects/quest",
-    },
-  ];
   return (
     <div className="p-12 flex flex-col justify-between items-center">
       <Header />

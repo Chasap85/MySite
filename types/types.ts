@@ -32,9 +32,18 @@ export interface Resume {
   contact: ContactInfo;
 }
 
-export interface Projects {
+export interface ProjectDetails {
   title: string;
   description: string;
   image: string;
-  url: string;
+  processImage: string;
+  intro: string;
+  about: string;
+  process: string;
+  progress: string;
+  repoUrl: string;
+}
+
+export interface ProjectData {
+  [key: string]: ProjectDetails;
 }

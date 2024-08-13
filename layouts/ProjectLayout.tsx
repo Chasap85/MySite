@@ -7,7 +7,7 @@ export default function ProjectLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="mx-12">
+    <div className="px-12 max-w-screen-lg mx-auto">
       <Header />
       <div className="flex justify-center mt-12 mb-12">
         <Link
