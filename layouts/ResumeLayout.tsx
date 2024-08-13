@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import About from "@/components/About";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
@@ -13,6 +14,7 @@ interface Props {
 export default function ResumeLayout({ resume, children }: Props) {
   return (
     <>
+      <Header />
       <div className="flex flex-row">
         <Profile contact={resume.contact} />
         <div>

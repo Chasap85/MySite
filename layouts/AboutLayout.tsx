@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import Conclusion from "@/components/about/Conclusion";
 import Family from "@/components/about/Family";
 import ImageContainer from "@/components/about/ImageContainer";
@@ -10,7 +11,7 @@ interface Props {
 export default function AboutLayout({ children }: Props) {
   return (
     <div className="flex flex-col">
-
+        <Header />
         <Intro />
         <Family />
 

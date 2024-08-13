@@ -1,5 +1,5 @@
+import Header from "@/components/Header";
 import Container from "@/components/projects/Container";
-import { url } from "inspector";
 import Link from "next/link";
 
 export default function ProjectPage() {
@@ -14,17 +14,18 @@ export default function ProjectPage() {
       title: "pi cluster",
       description: "Building a raspbery pi cluster",
       image: "/images/pi.webp",
-      url: "/projects/pi-cluster",
+      url: "/projects/cluster",
     },
     {
       title: "Code Quest",
       description: "Game that teaches kids how to code",
       image: "/images/quest.webp",
-      url: "/projects/code-quest",
+      url: "/projects/quest",
     },
   ];
   return (
     <div className="p-12 flex flex-col justify-between items-center">
+      <Header />
       <h1 className="text-4xl mt-48 mb-24">Projects</h1>
       <div className="flex flex-col justify-center items-center">
         {projects.map((project, index) => (

@@ -6,7 +6,7 @@ import { useRive, Layout, Fit, Alignment } from "@rive-app/react-canvas";
 export default function NavBar() {
   const { rive, RiveComponent } = useRive({
     // load file
-    src: "assets/chaselogo.riv",
+    src: "/assets/chaselogo.riv",
     // state machine
     stateMachines: ["hoverState", "themeState"],
     // provide ui layout

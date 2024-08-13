@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import AboutLayout from "@/layouts/AboutLayout";
 import Link from "next/link";
 

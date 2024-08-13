@@ -22,7 +22,6 @@ export default function RootLayout({
       <link rel='icon' type='image/png' href='/static/favicon.png' />
       <body>
         <main className={firaCode.className}>
-          <Header />
           {children}
         </main>
       </body>
