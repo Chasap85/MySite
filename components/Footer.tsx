@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="h-[350px] bg-[--black] mt-20 w-full dark:border-t-2">
+    <div className="p-12 bg-[--black] mt-20 w-full dark:border-t-2">
       <div className="p-12">
         <Image
           src="/static/icon.svg"
@@ -12,7 +12,7 @@ export default function Footer() {
         />
       </div>
       <div className="flex justify-center">
-        <h1 className="text-[--white] text-[75px]">Contact Me!</h1>
+        <h1 className="text-[--white] text-[140px]">Contact Me!</h1>
       </div>
       <div>
         <div>
