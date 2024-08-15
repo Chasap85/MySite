@@ -1,5 +1,6 @@
 import { Skills } from "@/types/types";
 import SvgAsset from "./svg-assets";
+import { assets } from "./svg-assets";
 
 interface Props {
     skills: Skills[];
@@ -15,7 +16,7 @@ export default function SkillsComponent({ skills }: Props) {
             <div
               className="flex items-center justify-center outline outline-[--black] outline-2 text-[--black] w-24 h-24 rounded-xl"
             >
-              <SvgAsset kind={skill.icon} size={60} href="#"/>
+              <SvgAsset kind={skill.icon as keyof typeof assets} size={60} href="#"/>
             </div>
             <p key={index} className="mt-2">{skill.name}</p>
           </div>

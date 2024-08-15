@@ -19,7 +19,7 @@ import {
   Typescript,
 } from "./icons";
 
-const assets = {
+export const assets = {
   github: Github,
   linkedin: Linkedin,
   next: Next,
