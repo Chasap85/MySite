@@ -1,6 +1,5 @@
 "use client";
 import { useEffect } from "react";
-import Logo from "../public/static/logo.svg";
 import { useRive, Layout, Fit, Alignment } from "@rive-app/react-canvas";
 
 export default function NavBar() {
@@ -20,10 +19,8 @@ export default function NavBar() {
         "(prefers-color-scheme: dark)"
       ).matches;
       if (darkTheme) {
-        console.log("dark theme");
         rive?.play("dark");
       } else {
-        console.log("light theme");
         rive?.play("light");
       }
     };

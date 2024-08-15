@@ -25,8 +25,8 @@ export default function Link() {
     },
   ];
   return (
-    <div className="w-full flex flex-col items-center mx-12">
-      <div className="flex md:flex-row sm:gap-y-10 md:gap-24 justify-between items-center lg:gap-60 flex-col">
+    <div className="w-full p-24">
+      <div className="flex md:flex-row xs:gap-y-10 justify-between items-center flex-col">
         {linkData.map((data) => (
           <Card
             key={data.title}

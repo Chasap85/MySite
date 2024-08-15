@@ -36,7 +36,10 @@ export interface ProjectDetails {
   title: string;
   description: string;
   image: string;
-  processImage: string;
+  processImage: Array<{
+      src: string;
+      caption: string;
+  }>,
   intro: string;
   about: string;
   process: string;
