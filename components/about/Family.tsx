@@ -4,7 +4,7 @@ export default function Family() {
   return (
     <div className="mt-24">
       <h1 className="text-3xl pb-8">Family</h1>
-      <div className="flex flex-col mx-20">
+      <div className="flex flex-col xs:px-4 md:px-20">
         <div className="">
           <div className="lg:flex-wrap  sm:w-[400px] lg:w-[600px]">
             <Image

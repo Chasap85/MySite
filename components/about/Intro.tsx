@@ -3,7 +3,7 @@ export default function Intro() {
     <div className="flex flex-col justify-center items-start border-b-4">
       <h1 className="text-3xl">My About Me Page</h1>
       {/* intro paragraph */}
-      <div className="py-12 px-20 space-y-6 text-[18px] font-medium">
+      <div className="py-12 xs:px-4 md:px-20 space-y-6 text-[14px] md:text-[18px] font-medium">
         <p>
           I&apos;m 29 years old, and if there&apos;s one thing I&apos;ve learned
           from my explorative years, it&apos;s that trying out every hobby under

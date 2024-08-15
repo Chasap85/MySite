@@ -6,13 +6,16 @@ export default function About() {
   return (
     <div className="py-8 px-12">
       <AboutLayout>
-        <div className="flex flex-col justify-center items-center m-24 mt-80 space-y-48">
-          <h1 className="text-[150px]">Thank You!</h1>
-          <div className="inline-block px-6 py-2 outline outline-2 outline-[--black] font-semibold rounded-lg shadow-md hover:bg-[--green] dark:hover:text-[--black2] focus:outline-none focus:ring-4 focus:ring-[--black] focus:ring-opacity-75 transition ease-in-out duration-200">
-            <Link href="/">
-              Go Back Home
-            </Link>
-          </div>
+        <div className="flex flex-col justify-center items-center mt-24 md:mt-48 space-y-8">
+          <h1 className="text-center text-4xl md:text-[80px] lg:text-[120px] font-bold leading-tight md:leading-none">
+            Thank You!
+          </h1>
+          <Link
+            href="/"
+            className="px-8 py-3 text-lg font-semibold rounded-lg border-2 border-[--black] shadow-md hover:bg-[--green] dark:hover:text-[--black2] focus:outline-none focus:ring-4 focus:ring-[--black] focus:ring-opacity-75 transition ease-in-out duration-200"
+          >
+            Go Back Home
+          </Link>
         </div>
       </AboutLayout>
     </div>
