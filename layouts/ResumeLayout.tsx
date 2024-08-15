@@ -15,7 +15,7 @@ export default function ResumeLayout({ resume, children }: Props) {
   return (
     <>
       <Header />
-      <div className="flex flex-row">
+      <div className="flex md:flex-row xs:flex-col">
         <Profile contact={resume.contact} />
         <div>
           <About />
