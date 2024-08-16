@@ -44,11 +44,11 @@ export default function SubHeader() {
   }, [rive]);
 
   // TODO: add backend db for future use
-  const handleLike = async () => {
-    await fetch("/api/likes", {
-      method: "POST",
-    });
-  };
+  // const handleLike = async () => {
+  //   await fetch("/api/likes", {
+  //     method: "POST",
+  //   });
+  // };
 
   return (
     <div className="grid sm:grid-cols-2 md:grid-cols-3 sm:grid-rows-none w-full justify-center items-center xs:grid-rows-2 xs:gap-y-4 sm:gap-y-0">
@@ -70,7 +70,7 @@ export default function SubHeader() {
       </div>
       <div className="flex justify-center row-span-3 items-center text-[14px]">
         Leave a like!
-        <span onClick={handleLike}>
+        <span>
           <RiveComponent
             className="h-14 w-14"
             onClick={() => rive?.play("clicked")}
