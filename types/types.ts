@@ -37,13 +37,16 @@ export interface ProjectDetails {
   description: string;
   image: string;
   processImage: Array<{
-      src: string;
-      caption: string;
-  }>,
+    src: string;
+    caption: string;
+  }>;
   intro: string;
   about: string;
   process: string;
-  progress: string;
+  progress: {
+    status: string;
+    progress: number;
+  };
   repoUrl: string;
 }
 

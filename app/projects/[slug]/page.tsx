@@ -2,6 +2,7 @@ import ProjectLayout from "@/layouts/ProjectLayout";
 import Image from "next/image";
 import projectData from "@/data/projects";
 import TableContents from "@/components/projects/TableContents";
+import ProgressBar from "@/components/projects/ProgressBar";
 
 export async function generateStaticParams() {
   return Object.keys(projectData).map((project) => ({ project }));
@@ -30,7 +31,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         <div className="lg:ml-12 md:ml-4 hidden md:block fixed top-1/2">
           <TableContents repoUrl={projectInfo.repoUrl}/>
         </div>
-        <div className="md:col-start-3 md:col-end-6 col-start-1 col-end-6">
+        <div className="md:col-start-3 md:col-end-6 col-start-1 col-end-6 p-8">
           <div className="flex flex-col justify-center items-center">
             <h2 id="intro" className="text-[36px] mt-16">
               Intro
@@ -65,7 +66,8 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             <h2 id="progress" className="text-[36px] mt-16">
               Progress
             </h2>
-            <p className="mt-8">{projectInfo.progress}</p>
+            <p className="mt-8">{projectInfo.progress.status}</p>
+            <ProgressBar progress={projectInfo.progress.progress}/>
           </div>
         </div>
       </div>
