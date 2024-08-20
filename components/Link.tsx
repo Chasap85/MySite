@@ -18,10 +18,10 @@ export default function Link() {
       href: "/about",
     },
     {
-      title: "Achievements",
-      description: "What I'm proud of",
+      title: "Hobbies",
+      description: "What I enjoy",
       image: AchieveIcon,
-      href: "/achievements",
+      href: "/hobbies",
     },
   ];
   return (

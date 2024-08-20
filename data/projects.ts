@@ -22,7 +22,7 @@ const projectData: ProjectData = {
     description: "Building a raspberry pi cluster",
     image: "/images/pi.webp",
     processImage: [
-      { src: "/images/projects/piCluster.webp", caption: "Cluster Fun" },
+      { src: "/images/projects/piCluster.webp", caption: "Cluster Concept Art" },
       { src: "/images/projects/fusion.webp", caption: "Modeling the shell" },
     ],
     intro:
